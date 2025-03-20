@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox Example</title>
+</head>
+<body>
+
+  <label for="myCheckbox">I agree to the terms</label>
+  <input type="checkbox" id="myCheckbox">
+
+  <script>
+    const checkbox = document.getElementById("myCheckbox");
+
+    checkbox.addEventListener("change", function() {
+     
+     if (checkbox.checked) {
+       console.log("Checked");
+     } else {
+       console.log("Unchecked");
+     }
+   });
+ </script>
+
+</body>
+</html>

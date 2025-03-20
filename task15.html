@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double-Click Example</title>
+</head>
+<body>
+
+  <div id="myDiv" style="width: 200px; height: 200px; background-color: lightblue;">
+    Double-click me to change my color!
+  </div>
+
+  <script>
+ const div = document.getElementById("myDiv");
+
+   
+div.addEventListener("dblclick", function() {
+ 
+  div.style.backgroundColor = "lightcoral";
+});
+</script>
+
+</body>
+</html>

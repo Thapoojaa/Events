@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Event Listeners Example</title>
+  <script>
+    function handleClick1() {
+      alert('First event listener triggered!');
+    }
+
+    function handleClick2() {
+      alert('Second event listener triggered!');
+    }
+
+    window.onload = function() {
+      const button = document.getElementById('myButton');
+      button.addEventListener('click', handleClick1);
+      button.addEventListener('click', handleClick2);
+    };
+  </script>
+</head>
+<body>
+
+  <button id="myButton">Click Me</button>
+
+</body>
+</html>
